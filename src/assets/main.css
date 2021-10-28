@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: #222222;
+}
+
+.btn:hover, .btn:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: whitesmoke;
+}
+
+.enhanced-text{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.lil-enhanced-text{
+    font-size: 1.1em;
+    font-weight: 500;
+}
