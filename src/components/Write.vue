@@ -127,6 +127,11 @@ export default {
     border: 1px solid #e0e0e0;
 }
 
+a, a:hover{
+    color: black;
+    font-weight: 400;
+}
+
 .create-btn-contain{
     padding: 0 0 0 10px;
     width:50px;
