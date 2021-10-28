@@ -17,7 +17,7 @@
                 <div class="col-md-4 p-2" v-for="note in searchedNote" :key="note.id">
                     <router-link :to="{name: 'Details', params: {id: note.id}}">
                         <div class="cus-card p-4">
-                            <h5 class="mb-2">{{note.title}}</h5>
+                            <h3 class="mb-2">{{note.title}}</h3>
                             <p class="mb-2">{{ note.preview }}</p>
                             <p class="date mb-1">{{note.date }}</p>
                         </div>

@@ -1,8 +1,9 @@
 <template>
+    <Navbar />
     <Hero :placeholder="note.title" />
     
     <section class="my-3">
-        <div class="container">
+        <div class="container min-h">
             <div class="row m-0">
                 <div class="col-md-8">
                     <p class="mb-2 lil-enhanced-text">{{ note.body }}</p>
@@ -46,17 +47,25 @@
             </div>
         </div>
     </section>
+
+    <section class="mt-2">
+        <Footer />
+    </section>
 </template>
 
 <script>
+import Navbar from "@/components/Navbar.vue";
 import Hero from "@/components/Hero.vue";
+import Footer from "@/components/Footer.vue";
 import { getNotes, addNotes } from "@/exports/data.js";
 import { getDate, previewText, sweetToast } from "@/exports/functions.js";
 
 export default {
     name: "Details",
     components: {
-        Hero
+        Hero,
+        Navbar,
+        Footer
     },
     data() {
         return {
@@ -135,5 +144,9 @@ export default {
 
 .cus-btn i{
     color: white !important;
+}
+
+.min-h{
+    min-height: 400px;
 }
 </style>
