@@ -6,7 +6,7 @@
         <div class="container min-h">
             <div class="row m-0">
                 <div class="col-md-8">
-                    <p class="mb-2 lil-enhanced-text">{{ note.body }}</p>
+                    <p class="mb-2 lil-enhanced-text"  style="white-space: pre-line;">{{ note.body }}</p>
                     <p class="date mt-4">{{ note.date }}</p>
                 </div>
                 <div class="col-md-4">
